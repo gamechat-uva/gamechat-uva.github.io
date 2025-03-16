@@ -1,12 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Organization's Website</title>
+    <title>GameChat</title>
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/videos.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/ai.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
 </head>
+
 <body>
-    <h1>Welcome to Our Organization</h1>
-    <p>This is our organization website powered by GitHub Pages!</p>
+
+    <!-- Hero / Title section -->
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">GameChat: Multi-LLM Dialogue for Safe, Agile, and
+                            Socially
+                            Optimal Multi-Agent Navigation in Constrained Environments</h1>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">
+                                <a href="">Vagul Mahadevan</a>,</span>
+                            <span class="author-block">
+                                <a href="">Shangtong Zhang</a>,</span>
+                            <span class="author-block">
+                                <a href="https://engineering.virginia.edu/faculty/rohan-chandra">Rohan Chandra</a>,
+                            </span>
+                        </div>
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">University of Virginia</span>
+                        </div>
+
+                        <!-- Links -->
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- PDF Link. -->
+                                <span class="link-block">
+                                    <a href="" class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                        <span>Paper</span>
+                                    </a>
+                                </span>
+                                <span class="link-block">
+                                    <a href="" class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>arXiv</span>
+                                    </a>
+                                </span>
+                                <!-- Code Link. -->
+                                <span class="link-block">
+                                    <a href="" class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Abstract. -->
+<div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Abstract</h2>
+      <div class="content has-text-justified">
+        <p>
+            Safe, agile, and socially compliant multi-robot navigation in cluttered and constrained environments remains a critical challenge. This is especially difficult with self-interested agents in decentralized settings, where there is no central authority to resolve conflicts induced by spatial symmetry. We address this challenge by proposing a novel approach, GameChat, which facilitates safe, agile, and deadlock-free navigation for both cooperative and self-interested agents. Key to our approach is the use of natural language communication to resolve conflicts, enabling agents to prioritize more urgent tasks and break spatial symmetry in a socially optimal manner. Our algorithm ensures subgame perfect equilibrium, preventing agents from deviating from agreed-upon behaviors and supporting cooperation. Furthermore, we guarantee safety through control barrier functions and preserve agility by minimizing disruptions to agents' planned trajectories. We evaluate GameChat in simulated environments with doorways and intersections. The results show that even in the worst case, GameChat reduces the time for all agents to reach their goals by over 35% from a naive baseline and by over 20% from SMG-CBF in the intersection scenario, while doubling the rate of ensuring the agent with a higher priority task reaches the goal first, from 50% (equivalent to random chance) to a 100% perfect performance at maximizing social welfare.</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--/ Abstract. -->
+
+
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+          <h2 class="title">BibTeX</h2>
+          <pre><code>@article{mahadevan2025gamechat,
+            title={GameChat: Multi-LLM Dialogue for Safe, Agile, and Socially Optimal Multi-Agent Navigation in Constrained Environments},
+            author={Mahadevan, Vagul and Zhang, Shangtong and Chandra, Rohan},
+            journal={arXiv preprint },
+            year={2025}
+          }
+      </code></pre>
+        </div>
+      </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <a class="icon-link" href="">
+                    <i class="fas fa-file-pdf"></i>
+                </a>
+                <a class="icon-link" href="" class="external-link" disabled>
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+                        <p>
+                            This website is licensed under a <a rel="license"
+                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                                Commons Attribution-ShareAlike 4.0 International License</a>.
+                        </p>
+                        <p>
+                            This means you are free to borrow the <a
+                                href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> website,
+                            we just ask that you link back to this page in the footer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
 </body>
+
 </html>
