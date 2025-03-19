@@ -7,20 +7,19 @@
     <title>GameChat</title>
 
     <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/videos.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/ai.svg">
+    <link rel="stylesheet" href="./static/css/videos.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="icon" href="./static/images/ai.svg">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
 </head>
 
 <body>
@@ -35,6 +34,11 @@
                         <h1 class="title is-1 publication-title">GameChat: Multi-LLM Dialogue for Safe, Agile, and
                             Socially
                             Optimal Multi-Agent Navigation in Constrained Environments</h1>
+
+                            <div class="container is-max-desktop">
+                                      <img src="./static/images/CoverImage3.png" alt="Image 1">
+                            </div>
+
                         <div class="is-size-5 publication-authors">
                             <span class="author-block">
                                 <a href="">Vagul Mahadevan</a>,</span>
@@ -55,7 +59,7 @@
                             <div class="publication-links">
                                 <!-- PDF Link. -->
                                 <span class="link-block">
-                                    <a href="" class="external-link button is-normal is-rounded is-dark">
+                                    <a href="https://arxiv.org/pdf/2503.12333" class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="fas fa-file-pdf"></i>
                                         </span>
@@ -63,7 +67,7 @@
                                     </a>
                                 </span>
                                 <span class="link-block">
-                                    <a href="" class="external-link button is-normal is-rounded is-dark">
+                                    <a href="https://arxiv.org/abs/2503.12333" class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="ai ai-arxiv"></i>
                                         </span>
@@ -72,7 +76,7 @@
                                 </span>
                                 <!-- Code Link. -->
                                 <span class="link-block">
-                                    <a href="" class="external-link button is-normal is-rounded is-dark">
+                                    <a href="https://github.com/vgmahadevan/GameChat" class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="fab fa-github"></i>
                                         </span>
@@ -87,24 +91,38 @@
         </div>
     </section>
 
-<!-- Abstract. -->
-<div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-      <h2 class="title is-3">Abstract</h2>
-      <div class="content has-text-justified">
-        <p>
-            Safe, agile, and socially compliant multi-robot navigation in cluttered and constrained environments remains a critical challenge. This is especially difficult with self-interested agents in decentralized settings, where there is no central authority to resolve conflicts induced by spatial symmetry. We address this challenge by proposing a novel approach, GameChat, which facilitates safe, agile, and deadlock-free navigation for both cooperative and self-interested agents. Key to our approach is the use of natural language communication to resolve conflicts, enabling agents to prioritize more urgent tasks and break spatial symmetry in a socially optimal manner. Our algorithm ensures subgame perfect equilibrium, preventing agents from deviating from agreed-upon behaviors and supporting cooperation. Furthermore, we guarantee safety through control barrier functions and preserve agility by minimizing disruptions to agents' planned trajectories. We evaluate GameChat in simulated environments with doorways and intersections. The results show that even in the worst case, GameChat reduces the time for all agents to reach their goals by over 35% from a naive baseline and by over 20% from SMG-CBF in the intersection scenario, while doubling the rate of ensuring the agent with a higher priority task reaches the goal first, from 50% (equivalent to random chance) to a 100% perfect performance at maximizing social welfare.</a>.
-        </p>
-      </div>
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+                <p>
+                    Safe, agile, and socially compliant multi-robot navigation in cluttered and constrained environments
+                    remains a critical challenge. This is especially difficult with self-interested agents in
+                    decentralized settings, where there is no central authority to resolve conflicts induced by spatial
+                    symmetry. We address this challenge by proposing a novel approach, GameChat, which facilitates safe,
+                    agile, and deadlock-free navigation for both cooperative and self-interested agents. Key to our
+                    approach is the use of natural language communication to resolve conflicts, enabling agents to
+                    prioritize more urgent tasks and break spatial symmetry in a socially optimal manner. Our algorithm
+                    ensures subgame perfect equilibrium, preventing agents from deviating from agreed-upon behaviors and
+                    supporting cooperation. Furthermore, we guarantee safety through control barrier functions and
+                    preserve agility by minimizing disruptions to agents' planned trajectories. We evaluate GameChat in
+                    simulated environments with doorways and intersections. The results show that even in the worst
+                    case, GameChat reduces the time for all agents to reach their goals by over 35% from a naive
+                    baseline and by over 20% from SMG-CBF in the intersection scenario, while doubling the rate of
+                    ensuring the agent with a higher priority task reaches the goal first, from 50% (equivalent to
+                    random chance) to a 100% perfect performance at maximizing social welfare.</a>
+                </p>
+            </div>
+        </div>
     </div>
-  </div>
-  <!--/ Abstract. -->
+    <!--/ Abstract. -->
 
 
     <section class="section" id="BibTeX">
         <div class="container is-max-desktop content">
-          <h2 class="title">BibTeX</h2>
-          <pre><code>@article{mahadevan2025gamechat,
+            <h2 class="title">BibTeX</h2>
+            <pre><code>@article{mahadevan2025gamechat,
             title={GameChat: Multi-LLM Dialogue for Safe, Agile, and Socially Optimal Multi-Agent Navigation in Constrained Environments},
             author={Mahadevan, Vagul and Zhang, Shangtong and Chandra, Rohan},
             journal={arXiv preprint },
@@ -112,15 +130,15 @@
           }
       </code></pre>
         </div>
-      </section>
+    </section>
 
     <footer class="footer">
         <div class="container">
             <div class="content has-text-centered">
-                <a class="icon-link" href="">
+                <a class="icon-link" href="https://arxiv.org/pdf/2503.12333">
                     <i class="fas fa-file-pdf"></i>
                 </a>
-                <a class="icon-link" href="" class="external-link" disabled>
+                <a class="icon-link" href="https://github.com/vgmahadevan/GameChat" class="external-link" disabled>
                     <i class="fab fa-github"></i>
                 </a>
             </div>
