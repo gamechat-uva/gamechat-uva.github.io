@@ -1,8 +1,16 @@
 .video-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr); /* 6 columns */
+    grid-template-columns: repeat(3, 1fr); /* 5 columns */
     gap: 10px; /* Space between items */
-    max-width: 1200px; /* Constrain width */
+    max-width: 1000px; /* Constrain width */
+    margin: 0 auto;
+}
+
+.video-grid-two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 10px; /* Space between items */
+    max-width: 1000px; /* Constrain width */
     margin: 0 auto;
 }
 
@@ -11,17 +19,40 @@
 }
 
 .video-container video {
-    width: 200px; /* Adjust as needed */
-    height: 150px;
+    width: 260px; /* Adjust as needed */
+    height: 200px;
     border: 2px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background: #000;
+    object-fit: contain;
+}
+
+.video-container-two {
+    text-align: center; /* Center text below videos */
+}
+
+.video-container-two video {
+    width: 400px; /* Adjust as needed */
+    height: 300px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: #000;
+    object-fit: contain;
 }
 
 .video-title {
     margin-top: 5px; /* Space above the title */
-    font-size: 14px; /* Adjust font size */
+    margin-bottom: 5px; /* Space below the title */
+    font-size: 16px; /* Adjust font size */
+    color: #333; /* Title text color */
+    font-weight: bold;
+}
+
+.video-title-two {
+    margin-top: 5px; /* Space above the title */
+    font-size: 20px; /* Adjust font size */
     color: #333; /* Title text color */
     font-weight: bold;
 }
